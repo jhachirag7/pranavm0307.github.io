@@ -1,0 +1,146 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:#333;
+}
+.drop{
+    height: .05vh;
+    width: .05vh;
+    border-radius: 50%;
+    position: absolute;
+    background:#330033;
+    opacity: .6;
+    animation: drop .3s linear;
+}
+@keyframes drop{
+    to{
+        height: 12vh;
+        width: 12vh;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+header {
+
+    display:block;
+    top:0;  margin:0;
+    text-align:center;
+    background-image:-webkit-linear-gradient(-45deg,#330033,#ff4da6);
+    width:100%;
+    color:white;
+    height:58px;
+    z-index:10;
+    border-bottom:3px solid white;
+}
+h1 {
+    text-align:center;
+    margin:0;
+     padding:7px; color:#262626;
+     z-index:12;
+     font-family:EB Garamond;
+}
+
+.f{
+    display:flex;
+    
+  justify-content: center;
+  align-items: center;
+    
+}
+.box{
+  width: 33.33%;
+  height: 100%;
+  text-align: center;
+  font-size: 120px;
+  border:3px solid ;
+  border-radius:10px;
+  background-color:#f2f2f2;
+  
+ 
+}
+
+#main{
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 16% auto 0 auto;
+  background-color: #f2f2f2;
+  background-color:#333;
+  font-family: 'Rock salt', cursive;
+}
+
+.column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 33.33%;
+  flex-direction: row;
+}
+
+#sup{
+   display:none ;
+    position:absolute ;
+    top:180px; left:0; right:0;
+    margin:auto; text-align:center;
+    width:85%; 
+    padding:15px;
+    background-image:-webkit-linear-gradient(-67deg,#1a001a,#ff4da6);
+    font-size:40px;
+    border:3px solid white;
+    border-radius:8px;
+    z-index:2;
+    font-family: 'EB Garamond'
+}
+
+#restart{
+  text-align: center;
+  margin-bottom:10px;
+border-radius:3px;
+  width:300px;
+  height:40px;
+  border:none;
+background-image:-webkit-linear-gradient(-45deg,#13547a,#80d0c7);
+border:1px solid white;
+}
+
+#score{
+  text-align: center;
+  position:fixed;
+  background-image:-webkit-linear-gradient(-45deg,#330033,#ff4da6);
+  left:0.1%;
+  width:100%;
+  bottom :0;
+  font-family:EB Garamond;
+ color:white;
+  border-top:3px solid white;
+
+  z-index:9;
+}
+
+input{
+  margin: 15px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  font-size: 12pt;
+}
+@keyframes pop
+{
+    0%
+    { transform:scale(0.6); }
+    34%
+    { transform:scale(1); }
+    66%
+    { transform:scale(0.84); }
+    100%
+    { transform:scale(1); }
+    
+}
