@@ -1,0 +1,6 @@
+body {margin: 0; background-color: #EFDB2F; text-align: center}
+p {font-size: 0px}
+td {width: 19vw; height: 13.8vh; text-align: center; font-size: 25px; font-weight: bold; color: black; border: 1px solid white}
+td:hover {background-color: #CDBA1E}
+input {width: 100%; height: 100%; border: none; font-size: 25px; font-weight: bold; padding: 0px 5px}
+#shiftBtn {background-color: yellow}
