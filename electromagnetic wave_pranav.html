@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Physics by Pranav
+</title>
+<link rel="stylesheet" type="text/css" href="physics.css">
+<script type="text/javascript" src="physics.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>h6{
+color:green
+}
+</style>
+</head>
+<body style="background-color:black;">
+
+   <canvas></canvas>
+        <a href='https://en.m.wikipedia.org/wiki/Electromagnetic_radiation'>em waves on wiki</a>
+        <input type=checkbox id=show-electric checked>
+        <label for=show-electric style='color:yellow'>
+          show electric</label><br>
+        <input type=checkbox id=show-magnetic checked>
+        <label for=show-magnetic style='color:lightblue'>
+          show magnetic</label><br>
+        <input type=checkbox id=show-polar checked>
+        <label for=show-polar style='color:pink'>
+          show polorised wave</label><br>
+
+
+        <input type=checkbox id=rotate checked>
+        <label for=rotate style='color:green'>rotate view</label><br>
+        <span>phase difference:<br><input type=range min=0 max=240 value=0 id=phase oninput=resize()></span>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: arial;
+    font-size: 0.75em;
+    color: silver;
+    background-color: #123;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+a {
+    float: right;
+    margin: 0.25em;
+    color: inherit;
+}
+
+span {
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+}
