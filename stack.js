@@ -1,4 +1,4 @@
-alert("Stack-block [game] \n I made this game a while ago within an hour for a youtube challenge/tournament video. \n\n Here's the DevEd video : https://www.youtube.com/watch?v=c20wjBiXBjU&t=844s \n\n Here's my original video : https://www.youtube.com/watch?v=aQXa_6hgAys&t=13s \n\n I hope you enjoy it ! comment your score ! ")
+alert("Welcome To Pranav's Gaming Hub.")
 
 function Box(x, y, W, H = box_h) {
     this.x = x;
