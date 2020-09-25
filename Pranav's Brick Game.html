@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+
+    </head>
+    <body>
+        
+    <canvas></canvas>  
+    <div id="d1">Score:0</div>
+    <div id="d2">level 1</div>
+<script> 
+CanvasRenderingContext2D.prototype.roundRect = 
+function (x, y, w, h, r) 
+{ 
+if (w < 2 * r) r = w / 2; 
+if (h < 2 * r) r = h / 2; 
+this.moveTo(x+r, y); 
+this.arcTo(x+w, y, x+w, y+h, r); 
+this.arcTo(x+w, y+h, x, y+h, r); 
+this.arcTo(x, y+h, x, y, r); 
+this.arcTo(x, y, x+w, y, r); 
+return this; 
+}  
+function Ang(a,b,c,d){
+return Math.atan2(b-d,a-c);   
+}
+function Dist(a,b,c,d){
+var x=b-d;
+var y=a-c;
+return Math.sqrt(x*x+y*y);
+}
+function Rand(min,max){
+return Math.floor(Math.random()*(max-min)+min);
+}  
+function Closest(arr,x){
+var dists=[];
+for(var i in arr){
+dists.push(Math.abs(arr[i]-x));
+}
+return arr[dists.indexOf(Math.min.apply(null,dists))];
+}
+</script>
+    </body>
+</html>
