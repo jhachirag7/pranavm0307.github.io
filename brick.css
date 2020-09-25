@@ -1,0 +1,36 @@
+
+body {}
+div{
+position:absolute;
+}
+#d1{
+background-color:white;
+width:40%;
+height:6%;
+padding:4px;
+top:0px;
+left:0px;
+font-weight:800;
+font-size:150%;
+font-family:monospace;
+}
+#d2{
+background-color:yellow;
+padding-top:15%;
+width:60%;
+height:20%;
+top:30%;
+left:20%;  
+text-align:center;
+font-size:26px;
+font-weight:bold;
+border:10px solid blue;
+opacity:0;
+transition:500ms linear all;
+}
+canvas{
+background-color:black;
+position:absolute;
+top:0px;
+left:0px;
+}
