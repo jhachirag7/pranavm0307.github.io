@@ -3,7 +3,15 @@ body {
  padding-top: 50%;
  position: relative;
 }
-
+.show{
+ width: 100%;
+ height: 100vh; 
+ 
+ background-image: url('pranav.jpg');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ background-attachment: fixed;
+ }
 #main {
         
     padding: 20px;
