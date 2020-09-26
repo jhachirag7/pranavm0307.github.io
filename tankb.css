@@ -70,3 +70,12 @@ button {
     font-weight: bolder;
     font-size: 0.9em;
 }
+.csk{
+ width: 100%;
+ height: 100vh; 
+ 
+ background-image: url('pranav.jpg');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ background-attachment: fixed;
+ }
