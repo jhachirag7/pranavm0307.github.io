@@ -331,7 +331,7 @@ body{
             z-index: 2;
         }
         #cup::after{
-            content: 'pr@n@v';
+            content: 'pranav';
             font-size: 2vh;
             position: fixed;
             transform: translate(-5%,-300%);
