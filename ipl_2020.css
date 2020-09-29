@@ -1,0 +1,299 @@
+
+body {
+    text-align:center;
+   padding:0;
+   margin:0;
+   opacity:1;
+
+background-image:url('https://dl.dropbox.com/s/jtcwsnz2yerbnoe/0_BLLy2UJ7CBu3D4oK.bin?dl=0')
+    background-size:100% 100%;
+    background-repeat:no-repeat ;
+    background-attachment:fixed;*/
+}
+#layer2{
+    display:none;
+    background-image:url('https://dl.dropbox.com/s/jtcwsnz2yerbnoe/0_BLLy2UJ7CBu3D4oK.bin?dl=0');
+    background-size:100% 100%;
+    background-repeat:no-repeat ;
+    background-attachment:fixed;
+
+}
+
+#load{
+    height:100%;
+    width:100%;
+    position:fixed;
+    display:block;
+    z-index:3;
+    background-color:#ddd;
+}
+
+.loading { 
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  display: inline-block;
+  position: relative;
+  top:50%;
+  transform:translate(-50% -50%);
+}
+.loading div {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  width: 20px;
+  border-radius:50%;
+  background-color: #ff0000;
+  animation: anim 1.2s infinite linear;
+}
+.loading div:nth-child(1) {
+  left: -20px;
+  animation-delay: -0.50s;
+  animation-timing-function: linear;
+}
+.loading div:nth-child(2) {
+  left: 5px;
+  animation-delay: -0.25s;
+  animation-timing-function: linear;
+}
+.loading div:nth-child(3) {
+  left: 30px;
+  animation-delay: 0;
+  animation-timing-function: linear;
+}
+@keyframes anim {
+  0% {
+    transform:scale(0.1);
+    height: 20px;
+  }
+  50%{
+    transform:scale(1);
+    height: 20px;
+  }
+  100% {
+    transform:scale(0.1);
+    height: 20px;
+  }
+}
+
+p{
+     font-size:18px;
+     font-weight:30px;
+     font-family:cursive;
+     font-variant:uppercase;
+     font-family:"Blippo", fantasy;
+     
+ }
+ 
+button
+ {
+  border:none;
+  outline:none;
+  background:#ff0000;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:20px;
+ }
+ 
+.one{
+margin-left:50px;
+    width:250px;
+    height:300px;
+    background-color:#75c1f0;
+    border-radius:20px;
+    border:5px  solid #0A1172;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:center ;
+  /*  box-shadow:0 0 10px rgba(0,0,0,1);*/
+    box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+  
+    font-family:"Courier New" , courier;
+    padding-top:50px;
+    opacity:0.8;
+    font-variant:uppercase;
+    }
+    
+.two{
+     margin:50px;
+    width:250px;
+    height:300px;
+    background-color:#ffd633;
+    border-radius:20px;
+     border:5px  solid #0A1172;
+     color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:center ;
+  /*  box-shadow:0 0 10px rgba(0,0,0,1);*/
+     box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+    font-family:"Courier New" , courier;
+    padding-top:50px;
+    opacity:0.8;
+}
+.three{
+    margin:50px;
+    width:250px;
+    height:300px;
+    background-color:#b30000;
+    border-radius:20px;
+     border:5px  solid #0A1172;
+     color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center ;
+ /*   box-shadow:0 0 10px rgba(0,0,0,1);*/
+     box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+    font-family:"Courier New" , courier;
+    padding-top:50px;
+    opacity:0.8;
+}
+.four{
+    margin:50px;
+    width:250px;
+    height:300px;
+    background-color:#0059b3;
+    border-radius:20px;
+     border:5px  solid #0A1172;
+     color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center ;
+    /*box-shadow:0 0 10px rgba(0,0,0,1);*/
+     box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+    font-family:"Courier New" , courier;
+    padding-top:50px;
+    opacity:0.8;
+}
+.five{
+    margin:50px;
+    width:250px;
+    height:300px;
+      background-color:#ff3333;
+    border-radius:20px;
+     border:5px  solid #0A1172;
+     color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center ;
+   /* box-shadow:0 0 10px rgba(0,0,0,1);*/
+    box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+    font-family:"Courier New" , courier;
+    padding-top:50px;
+    opacity:0.8;
+}
+.six{
+    margin:50px;
+    width:250px;
+    height:300px;
+    background-color:#ffbb33;
+    border-radius:20px;
+    border:5px black;
+    border:5px solid #0A1172;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:center ;
+   /* box-shadow:0 0 10px rgba(0,0,0,1);*/
+    box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+    font-family:"Courier New" , courier;
+    padding-top:50px;
+     opacity:0.8;
+     
+}
+.seven{
+    margin:50px;
+    width:250px;
+    height:300px;
+    background-color:#e62e00;
+    border-radius:20px;
+     border:5px  solid #0A1172;
+     color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center ;
+   /* box-shadow:0 0 10px rgba(0,0,0,1);*/
+    box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+    font-family:"Courier New" , courier;
+    padding-top:50px;
+    opacity:0.8;
+}
+
+.eight{
+    margin:50px;
+    width:250px;
+    height:300px;
+    background-color:#ffa31a;
+   border-radius:20px;
+     border:5px  solid #0A1172;
+     color:black;
+    display:flex;
+    flex-direction:column;
+    align-items:center ;
+  /*  box-shadow:0 0 10px rgba(0,0,0,1);*/
+   box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+    font-family:"Courier New" , courier;
+    padding-top:50px;
+    opacity:0.8;
+}
+footer{
+
+    background-color:transparent;
+    text-align:center;
+    padding:20px;
+    font-size:10px;
+    color:white;
+    
+}
+
+#round
+{
+    width:150px;
+    height:150px;
+    border-radius:100px;
+  
+}
+
+ .layer {
+  position:fixed;
+  left:0;
+  top:0;
+background:url("https://dl.dropbox.com/s/eh6out9wvs25qdx/ipl-dribble.gif?dl=0");
+  background-size:cover;
+  height:100vh;
+  color:#aaa;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  z-index:1;
+  background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+display:grid;
+place-items:center;
+ }
+ .layer p 
+ {
+  margin-bottom:25px;
+ }
+
+ 
+.layertext
+{
+font-size: 15px;
+letter-spacing: 2px;
+word-spacing: 2px;
+font-weight: 700;
+z-index:1;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: uppercase;
+color: #FFFFFF;
+/*text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;*/
+opacity:0.8;
+}
