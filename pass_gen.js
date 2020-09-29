@@ -1,4 +1,5 @@
 
+
 onload = () => {
     
     const characterAmountRange = document.getElementById('characterAmountRange')
