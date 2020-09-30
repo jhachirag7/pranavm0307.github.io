@@ -1,9 +1,9 @@
 window.onload=function(){
 Swal.fire({
         icon: 'success',
-        title: 'If you like,give a 👍',
+        title: 'Pranav Welcomes You',
         html: "make your own burger😋🍔,scroll items left for more🥦🧀🥓🍅🍳<br>you can change drinks also😁",
-        footer: '&copy All rights reserved !'
+        footer: '🥦🧀🥓🍅🍳'
     });
 }
 var t=45,e,start,calories=0;
@@ -20,7 +20,7 @@ var t=45,e,start,calories=0;
             e.className=x;
             if(x=="finish"){
                 end=false;
-                alert("comment down your calories gained😁,have a nice day🙂");
+                alert("Have a nice day🙂");
             }
             //console.log(t);
             calories+=z;
