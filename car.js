@@ -354,11 +354,11 @@ function find() {
                         if (names[k] == "finish") {
                             let task = document.getElementById("task");
                             task.innerHTML = "You won";
-                            alert("You won Congrats! More challenge mode levels will be coming soon, with new updates!\n\n\nJai AIMU");
+                            alert("You won Congrats! More challenge mode levels will be coming soon, with new updates!");
                             return;
                         }
                         
-                        alert("Car crashed! You lost! More challenge mode levels will be coming soon, with new updates!\n\n\nJai AIMU");
+                        alert("Car crashed! You lost! More challenge mode levels will be coming soon, with new updates!");
                         //drawLine(b[j],b[val2]);
                         return;
                     }
