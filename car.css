@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Raleway&display=swap');
+
+body {
+    height: 100vh;
+    overflow:hidden;
+    font-size:20px;
+    font-family:Raleway;
+    font-weight:800;
+    justify-content:center;
+}
+
+#confirm {
+    position:absolute;
+    line-height:200%;
+    top:80%;
+    left:30%;
+    width:40%;
+    height:15%;
+    background:rgba(255,255,255,0.8);
+}
+
+.option {
+    padding:20px;
+    border:1px solid black;
+    transition:.5s;
+}
+
+#mblock {
+    position:absolute;
+    top:10%;
+    left:10%;
+    width:80%;
+    height:70%;
+    background: rgba(255,255,255,0.3);
+}
+
+#questions {
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    text-align:center;
+    background: url("https://imgur.com/LxrrVAH.jpg");
+    background-size:cover;
+}
+
+#loader {
+    position:absolute;
+    top:45%;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:30px;
+    z-index:1000;
+}
+
+#main {
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+
+#player {
+    position: absolute;
+    /*background: yellow;*/
+    z-index:20;
+    /*background: url("https://imgur.com/KUORtem.png");
+    background-size:110% 110%;
+    background-position:center;*/
+}
+
+#image-of-player {
+    position:absolute;
+    top:-7%;
+    left:-10%;
+    height:114%;
+    width:120%;
+    background: url("https://imgur.com/KUORtem.png");
+    background-size:100% 100%;
+} 
+
+#info {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    height: 20%;
+    width: 20%;
+    background: orange;
+}
+
+button {
+    top:0;
+    height: 60px;
+    width:30vw;
+    position: fixed;
+    z-index:100;
+    user-select: none;
+}
+
+#up {
+    left:35vw;
+    top: calc(100% - 120px);
+    background:url('https://www.flaticon.com/svg/static/icons/svg/892/892556.svg') 50% 50%, white;
+    background-size:50% 50%;
+    background-repeat:no-repeat;
+}
+
+#down {
+    left: 35vw;
+    top: calc(100% - 60px);
+    background:url('https://www.flaticon.com/svg/static/icons/svg/892/892499.svg') 50% 50%, white;
+    background-size:50% 50%;
+    background-repeat:no-repeat;
+}
+
+#left {
+    left: 5vw;
+    top: calc(100% - 60px);
+    background:url('https://www.flaticon.com/svg/static/icons/svg/892/892513.svg') 50% 50%, white;
+    background-size:50% 50%;
+    background-repeat:no-repeat;
+}
+
+#right {
+    left: 65vw;
+    top: calc(100% - 60px);
+    background:url('https://www.flaticon.com/svg/static/icons/svg/892/892529.svg') 50% 50%, white;
+    background-size:50% 50%;
+    background-repeat:no-repeat;
+}
+
+#tree {
+    position:absolute;
+    background: green;
+}
+
+#points {
+    z-index:20;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+#roadleft {
+    z-index:5;
+    background:rgb(245,245,245);
+    position:absolute;
+    height:10500px;
+    width:2000px;
+    top:-10000px;
+    left:-1950px;
+}
+#roadright {
+    z-index:5;
+    background:rgb(245,245,245);
+    position:absolute;
+    height:10500px;
+    width:2000px;
+    top:-10000px;
+    left:500px;
+}
+
+#bottom {
+    z-index:5;
+    background:white;
+}
+
+#car {
+    z-index:6;
+}
+
+#points {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+#show {
+    position:fixed;
+    top:90%;
+    left:90%;
+    height:10%;
+    width:10%;
+}
+
+#task {
+    position:absolute;
+    top:calc(100% - 80px);
+    left:10px;
+    height:60px;
+    width:110px;
+    background:linear-gradient(90deg, green, rgb(100,255,100));
+    z-index:200;
+    font-size:15px;
+    border-radius:10%;
+    padding:5px;
+}
+
+#middle2 {
+    position:absolute;
+    top:-10000px;
+    left:260px;
+    height:6800px;
+    width:20px;
+    background:linear-gradient(90deg, orange 40%, transparent 40%, transparent 60%, orange 60%);
+    z-index:15;
+}
+
+#finish {
+    position:absolute;
+    top:400px;
+    left:280px;
+    background:url('https://imgur.com/8bQrPqy.jpg');
+    height:80px;
+    width:200px;
+    text-align:center;
+    z-index:20;
+    color:green;
+    line-height:50px;
+    font-weight:900;
+}
+
+#middle {
+    position:absolute;
+    top:-3000px;
+    left:260px;
+    height:3500px;
+    width:20px;
+    background:linear-gradient(90deg, orange 40%, transparent 40%, transparent 60%, orange 60%);
+    z-index:15;
+}
+
+#road {
+    position:absolute;
+    top:-10000px;
+    left:50px;
+    height:10500px;
+    width:450px;
+    z-index:10;
+    background:black;
+}
+
+#shops2 {
+    position:absolute;
+    top:-10000px;
+    left:-150px;
+    height:10500px;
+    width:200px;
+    background:url('https://imgur.com/eRwMn1C.jpg');
+    z-index:10;
+}
+
+#shops1 {
+    position:absolute;
+    top:-10000px;
+    left:500px;
+    height:10500px;
+    width:200px;
+    background:url('https://imgur.com/oH86b6X.jpg');
+    z-index:10;
+}
+
+#bottom {
+    position:absolute;
+    top:500px;
+    left:-200px;
+    width:1000px;
+    height:500px;
+}
+
+#block {
+    position:absolute;
+    top:3100px;
+    left:3100px;
+    height:100px;
+    width:100px;
+    background:blue;
+    transition:transform-origin .2s;
+}
+
+#map {
+    top:-10000px;
+    position:absolute;
+    left:-2000px;
+    height:10500px;
+    width:4500px;
+    background:black;
+    color:white;
+    overflow:hidden;
+}
+
+
+#checkturn {
+    position:absolute;
+    top:-3000px;
+    left:300px;
+    height:10px;
+    width:200px;
+}
+
+#checkdist {
+    position:absolute;
+    top:-3000px;
+    left:260px;
+    height:2px;
+    width:2px;
+}
