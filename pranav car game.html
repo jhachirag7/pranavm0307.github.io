@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Game by Pranav>
+        <link rel="stylesheet" type="text/css" href="car.css">
+        <script type="text/javascript" src="car.js"></script>
+    </head>
+    <body>
+        <div id = "loader">Loading...</div>
+        <div id = "questions">
+            <div id = "mblock">
+                <br>Which Device are you using?<br><br><br>
+                <div id = "laptop" class = "option" onclick = "select(0)">Laptop (preferred)</div>
+                <div id = "mobile" class = "option" onclick = "select(1)">Mobile Phone</div>
+                <div id = "confirm" onclick = "next()">Next</div>
+            </div>
+        </div>
+        <div id = "main">
+            <div id = "map" style = "top:-10000px;position:absolute;left:-2000px;height:10500px;width:4500px;background:black;color:white;overflow:hidden;">
+                <div id = "block" style = "position:absolute;top:3100px;left:3100px;height:100px;width:100px;background:blue;transition:transform-origin .2s;"></div>
+            </div>
+            
+            
+            <div id = "player" style = "top:270px;left:150px;height:150px;width:80px;">
+                <div id = "image-of-player"></div>
+            </div>
+            
+            
+            <button id = "up" unselectable="on" onselectstart="return false;" onmousedown="return false;"></button>
+            <button id = "down" unselectable="on" onselectstart="return false;" onmousedown="return false;"></button>
+            <button id = "left" unselectable="on" onselectstart="return false;" onmousedown="return false;"></button>
+            <button id = "right" unselectable="on" onselectstart="return false;" onmousedown="return false;"></button>
+            
+            <div id = 'roadleft' style = "position:absolute;height:10500px;width:2000px;top:-10000px;left:-1950px;"></div>
+            <div id = 'roadright' style = "position:absolute;height:10500px;width:2000px;top:-10000px;left:500px;"></div>
+            <!--<div id = "car" style = "position:absolute;height:150px;width:100px;top:350px;left:350px;background:red;z-index:11;"></div>-->
+            <div id = "bottom" style = "position:absolute;top:500px;left:-200px;width:1000px;height:500px;"></div>
+            <div id = "shops1" style = "position:absolute;top:-10000px;left:500px;height:10500px;width:200px;background:url('https://imgur.com/oH86b6X.jpg');z-index:10;"></div>
+            <div id = "shops2" style = "position:absolute;top:-10000px;left:-150px;height:10500px;width:200px;background:url('https://imgur.com/eRwMn1C.jpg');z-index:10;"></div>
+            <div id = "road" style = "position:absolute;top:-10000px;left:50px;height:10500px;width:450px;z-index:10;background:black;"></div>
+            <div id = 'middle' style = 'position:absolute;top:-3000px;left:260px;height:3500px;width:20px;background:linear-gradient(90deg, orange 40%, transparent 40%, transparent 60%, orange 60%);z-index:15;'></div>
+            <div id = "finish" style = "position:absolute;top:350px;left:280px;background:url('https://imgur.com/8bQrPqy.jpg');height:80px;width:200px;text-align:center;z-index:20;color:green;line-height:50px;font-weight:900;">FINISH LINE</div>
+            <div id = "middle2" style = 'position:absolute;top:-10000px;left:260px;height:6800px;width:20px;background:linear-gradient(90deg, orange 40%, transparent 40%, transparent 60%, orange 60%);z-index:15;'></div>
+            <div id = "checkturn" style = 'position:absolute;top:-3000px;left:300px;height:10px;width:200px;'></div>
+            <div id = "checkdist" style = 'position:absolute;top:-3000px;left:260px;height:2px;width:2px;'></div>
+            <div id = "task" style = "position:absolute;top:calc(100% - 80px);left:10px;height:60px;width:110px;background:linear-gradient(90deg, green, rgb(100,255,100));z-index:200;font-size:15px;border-radius:10%;padding:5px;">Task:</div>
+            <div id = "points"></div>
+        </div>
+    </body>
+</html>
