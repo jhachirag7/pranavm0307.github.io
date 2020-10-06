@@ -1,27 +1,25 @@
+var qrcode = new QRCode("qrcode");
 
-const App = () =>{
-    const [name,changedName] = React.useState("Nafi")
-    const result = (event) =>{
-        changedName(event.target.value)
+function makeCode () {      
+    var elText = document.getElementById("text");
+    
+    if (!elText.value) {
+        alert("Input a text");
+        elText.focus();
+        return;
     }
     
-  return (
-     
-     <div className="container">
-        <h1>QR CODE GENERATOR</h1>
-        <input type="text"
-        onChange={result}
-        />
-        
-        <img        src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${name}`}
-        alt="QRcode"
-        className="img"/>
-        
-          </div>
-  )
+    qrcode.makeCode(elText.value);
 }
-ReactDOM.render(
- <App/>,
-  document.getElementById('react-app')
-);
 
+makeCode();
+
+$("#text").
+    on("blur", function () {
+        makeCode();
+    }).
+    on("keydown", function (e) {
+        if (e.keyCode == 13) {
+            makeCode();
+        }
+    });
