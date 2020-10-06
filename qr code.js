@@ -1,5 +1,4 @@
 
-
 const App = () =>{
     const [name,changedName] = React.useState("Nafi")
     const result = (event) =>{
@@ -25,3 +24,4 @@ ReactDOM.render(
  <App/>,
   document.getElementById('react-app')
 );
+
