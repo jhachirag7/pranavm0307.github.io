@@ -1,20 +1,64 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>QR Code Generator by Pranav</title>
-        <link rel="stylesheet" type="text/css" href="qr code.css">
+<!doctype html>
+	<head>
+		<style>
+			/* CSS comes here */
+			body {
+			    padding:20px;
+			}
+			input {
+			    padding:5px;
+			    background-color:transparent;
+			    border:none;
+			    border-bottom:solid 4px #8c52ff;
+			    width:250px;
+			    font-size:16px;
+			}
+			
+			.qr-btn {
+			    background-color:#8c52ff;
+			    padding:8px;
+			    color:white;
+			    cursor:pointer;
+			}
+		</style>
+		
+		<title>Pranav's QR Code Generator</title>
+	</head>
+	<body>
+		<h3>QR Code Generator</h3>
+        <div><input id="qr-text" type="text" placeholder="Text to generate QR code"/></div>
+        <br/>
+        <div>
+            <button class="qr-btn" onclick="generateQRCode()">Create QR Code</button>
+        </div>
+        <br/>
+        <p id="qr-result">Pranav's QR Code</p>
+        <canvas id="qr-code"></canvas>
         
-        <script type="text/javascript" src="qr code.js"></script>
-         <meta charset="utf-8" />
-    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-    <script src="https://unpkg.com/react@latest/umd/react.development.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@material-ui/core@latest/umd/material-ui.development.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/babel-standalone@latest/babel.min.js" crossorigin="anonymous"></script>
-    
-    </head>
-    <body>
-      <input id="text" type="text" value="https://pranavmahadkar.tech/" style="width:80%" /><br />
-<div id="qrcode"></div>
-    </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+		<script>
+			/* JS comes here */
+			var qr;
+			(function() {
+                    qr = new QRious({
+                    element: document.getElementById('qr-code'),
+                    size: 200,
+                    value: 'https://pranavmahadkar.tech/'
+                });
+            })();
+            
+            function generateQRCode() {
+                var qrtext = document.getElementById("qr-text").value;
+                document.getElementById("qr-result").innerHTML = "QR code for " + qrtext +":";
+                alert(qrtext);
+                qr.set({
+                    foreground: 'black',
+                    size: 200,
+                    value: qrtext
+                });
+            }
+            
+		</script>
+        
+	</body>
 </html>
