@@ -9,7 +9,7 @@ color:blue;
 }
 
 
-.original{
+#original{
 background-color: black;
 }
 
@@ -113,6 +113,12 @@ align: center;
 
 
 }
+
+
+#original{
+background-color: black;
+}
+
 
 
 .oneplus{
