@@ -9,7 +9,7 @@ color:blue;
 }
 
 
-#original{
+.original{
 background-color: black;
 }
 
@@ -112,11 +112,6 @@ margin-top: 25px;
 align: center;
 
 
-}
-
-
-#original{
-background-color: black;
 }
 
 
