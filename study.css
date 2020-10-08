@@ -9,6 +9,9 @@ color:blue;
 }
 
 
+.original{
+background-color: black;
+}
 
  .csk{
  width: 100%;
@@ -47,7 +50,7 @@ background-color: black;
 
 
 
- a:link { color: indigo;}
+ a:link { color: yellow;}
  a:visited { color: green;}
  a:hover {color: red;}
  a:active {color:blue;}
