@@ -1,0 +1,117 @@
+h1{
+color:red;
+}
+h2{
+color:green;
+}
+h3{
+color:blue;
+}
+
+
+
+ .csk{
+ width: 100%;
+ height: 100vh; 
+ 
+ background-image: url('pranav.jpg');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ background-attachment: fixed;
+ }
+.csk_won{
+ width: 100%;
+ height: 100vh; 
+ 
+ background-image: url('jonty.jpg');
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ background-attachment: fixed;
+ }
+ 
+
+#prisha{
+background-color: green;
+}
+
+
+
+
+ #jonty{
+ background-color: orange;
+ }
+
+.mobile{
+background-color: black;
+}
+
+
+
+ a:link { color: indigo;}
+ a:visited { color: green;}
+ a:hover {color: red;}
+ a:active {color:blue;}
+
+
+ .bgimg{
+
+
+ background-image: url('study.jpg');
+ background-size: 100% 100%;
+ background-attachment: fixed;
+ width: 100%;
+ height: 720px;
+
+}
+
+ .hearderset{
+ padding-top: 250px;
+ box-sizing: border-box;
+}
+
+
+
+.ourservices{
+
+ padding: 100px 0px 60px;
+ height: 700px;
+ 
+}
+
+
+
+ .rowsetting{
+
+ margin: 80px 0px ;
+ }
+
+
+ .imgsetting{
+ border-radius: 50%;
+ height: 100px;
+ width: 100px;
+}
+
+.fa-book{
+ margin-top: 25px;
+}
+
+
+.fa-book{
+ margin-top: 24px;
+}
+
+.fa-book{
+margin-top: 25px;
+}
+
+.change{
+align: center;
+
+
+}
+
+
+.oneplus{
+background-color: black;
+}
