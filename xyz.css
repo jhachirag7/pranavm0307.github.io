@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    background-color:#222;
+    color: lightgray;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#container {
+    height: 50vh;
+    overflow: scroll;
+}
