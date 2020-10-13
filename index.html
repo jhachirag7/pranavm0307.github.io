@@ -1,211 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>
-Pranav Vishwanath Mahadkar
-</title>
-<link rel="stylesheet" type="text/css" href="web_page.css">
-<link rel="stylesheet" type="text/css" href="fire.css">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>h6{
-color:green
-}
-</style>
-</head>
-<body>
-
-
-
- 
- 
- 
-
-  <div class="bgimg">
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-
-
-   <div class="container"> <a clas="navbar-brand     text-warning font-weight-bold"> <div style="color: yellow"> Pranav Mahadkar </div> </a>
-          
-
-    <button class="navbar-toggler type="button" data-toggle="collapse" data-target="#collapsenavbar">
-
-    <span class="navbar-toggler-icon"> </span>
-
-
- </button>
-
-
-
-
-<div class="collapse navbar-collapse text-center" id="collapsenavbar">
-  
-       <ul class="navbar-nav ml-auto">
-                                     
-                                     
-                                     
- <li class="nav-item">
- <li class="nav-item">
-                     <a href="animation.html" target="_blank" class="nav-link text-white">ENTERTAINMENT</a>
-               </li>
-                                                                              
-                     
-                                     
-                                     
-                                     
- 
- <li class="nav-item">
- <li class="nav-item">
-                     <a href="subpart.html" target="_blank" class="nav-link text-white">ABOUT</a>
-               </li>
-                                                                    
-                                                                                       
-                                                                                       
-                                                                                       
- <li class="nav-item">
- <li class="nav-item">
-                     <a href="combinepdf.pdf" target="_blank" class="nav-link text-white">ACHIEVEMENTS</a>
-               </li>
-              
-                                                                                         
-  <li class="nav-item">
-                    
- <li class="nav-item">
-                     <a href="study.html"  class="nav-link text-white">STUDY MATERIAL</a>
-               </li>
-             
-                                                                                       
-                                                                                       
- <li class="nav-item">
-                    
- <li class="nav-item">
-                     <a href="#contact" class="nav-link text-white">CONTACT</a>
-               </li>
-             
-
-
-        </ul>
-
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login to Pranav's Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<form action="ebhjd2bjr"   method="post">
+<div class="login-box">
+  <h1>Login</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username">
   </div>
 
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password">
   </div>
- 
 
-    </nav>
-  
-   <div class="container text-center text-white hearderset">
-    
-   <h1 style="color: white">Welcome To My Website</h1>
-   <h2 style="color: white">Its Nice To Meet You</h2>
-
-
-
-                                                                                                 
-
-                                                                                                       
-                                                                                                       
-                                                                                                       
-                                                                                                       </div>
-  </div>
- 
-                                                                                                       
-                                                                                                       
-
-
-<div class="oneplus">
-<div style="color: white">
-
-<div id="contact">
-<center><b><h1><div style="color: yellow"><u>Contact us</u></div></h1></b></center></div>
-Pranav Vishwanath Mahadkar<br>
-Cell no:-9167222636<br>
-Email-id:-pranavmahadkar07@iitb.ac.in<br><br>
+  <input type="button" class="btn" value="Sign in">
 </div>
-<a href="https://www.facebook.com/pranav.mahadkar.5" target="_blank"><button class="btn btn-warning text-dark btn-sm">   Facebook</button> 
-</a> <br><br>
-
-
-<a href="https://www.linkedin.com/in/pranav-mahadkar-9184231a9/" target="_blank"><button class="btn btn-warning text-dark btn-sm">LinkedIn</button> 
-</a><br><br>
-
-
-
-<a href="https://www.instagram.com/pranav_v_m_07/" target="_blank"><button class="btn btn-warning text-dark btn-sm">Instagram</button> 
-</a><br><br>
-
-
-<a href="https://twitter.com/PranavMahadkar" target="_blank"><button class="btn btn-warning text-dark btn-sm">Twitter</button> 
-</a>
-<br>
-<br>
-
-
-</div>
-         
-                                                                                                           
-
-  <canvas></canvas>
-
-    <script>
-    
-        var t = 0;
-        var c = document.querySelector("canvas");     
-        var $ = c.getContext('2d');
-        c.width = window.innerWidth;
-        c.height = window.innerHeight;
-        $.fillStyle = 'hsla(0,0%,0%,1)';
-
-        window.addEventListener('resize', function() {
-          c.width = window.innerWidth;
-          c.height = window.innerHeight;
-        }, false);
-
-        function draw() {
-          $.globalCompositeOperation = 'source-over';
-          $.fillStyle = 'hsla(0,0%,0%,.1)';
-          $.fillRect(0, 0, c.width, c.height);
-          var foo, i, j, r;
-          foo = Math.sin(t) * 2 * Math.PI;
-          for (i=0; i<400; ++i) {
-            r = 400 * Math.sin(i * foo);
-            $.globalCompositeOperation = '';
-            $.fillStyle = 'hsla(' + i + 12 + ',100%, 60%,1)';
-            $.beginPath();
-            $.arc(Math.sin(i) * r + (c.width / 2), 
-                  Math.cos(i) * r + (c.height / 2), 
-                  1.5, 0, Math.PI * 2);
-            $.fill();
-
-          }
-          t += 0.000005;
-          return t %= 2 * Math.PI;
-
-        };
-
-        function run() {
-          window.requestAnimationFrame(run);
-          draw();
-        }
-        run();
-    </script>
-
-
-                                                                               
-                                             <div class="original"> <div><div style="color: white" align="center">© Pranav Vishwanath Mahadkar</div></div></div>                                                                         
-                                                                                                       
-</body>
+<form>
+  </body>
 </html>
