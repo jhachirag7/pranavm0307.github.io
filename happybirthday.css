@@ -1,7 +1,9 @@
 
 body {
      background-image:url("prisha.jpeg");
-    background-size:100vh 100vh;
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-attachment: fixed;
 }
 
 #jan{
