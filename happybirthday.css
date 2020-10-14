@@ -1,7 +1,7 @@
 
 body {
-     background-video:url("prisha.mp4");
-    background-size:100vw 100vh;
+     background-image:url("prisha.mp4");
+    background-size:100% 100%;
 }
 
 #jan{
